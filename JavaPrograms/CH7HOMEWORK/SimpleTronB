@@ -1,0 +1,27 @@
+kevin do
+userID 1711886
+homework 7.35
+simpletronB
+
+Location		Number		Instruction
+00				1016		Read A
+01				2016		Load A
+02				3017		Add Result
+03				2117		Store Result
+04				1020		Load Counter
+05				3018		Add One
+06				2120		Store Counter
+07				2019		Load Seven
+08				3120		Subtract Counter
+09				4111		If counter = 0, Skip to 11
+10				4000		loop back to 00
+11				2017		Load Result
+12				3219		Divide by seven
+13				2117		Store Result
+14				1117		Write Result
+15				4300		halt
+16				0000		variable A
+17				0000		variable result
+18				0001		variable one
+19				0007		variable 7
+20				0001		variable counter

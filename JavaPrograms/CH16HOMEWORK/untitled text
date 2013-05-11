@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class TextAnalysisA
+{
+	private static String sentence;
+	private static char[] capitalLetters = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+	private static char[] lowerLetters = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+	
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner( System.in );
+		
+		System.out.print( "Enter in a sentence: " );
+		sentence = input.nextLine();
+		
+		for ( int x = 0; x < capitalLetters.length; x++ )
+		{
+			char letter = capitalLetters[x];
+			
+			CountingCapital( letter, x );
+		}
+		
+		for ( int y = 0; y < lowerLetters.length; y++ )
+		{
+			char letter = lowerLetters[y];
+			
+			CountingLower( letter, y );
+		}
+		
+	}
+	
+	public static void CountingCapital( char letter, int x )
+	{
+		for ( int i = 0; i < sentence.length(); i++ )
+		{
+			if ( sentence.charAt(i) == letter )
+			{
+				System.out.printf( "%s occurs %d time(s).\n", capitalLetters[x], i++ );
+				
+			}
+		}
+	}
+	
+	public static void CountingLower( char letter, int y )
+	{
+		for ( int i = 0; i < sentence.length(); i++ )
+		{
+			if ( sentence.charAt(i) == letter )
+			{
+				System.out.printf( "%s occurs %d time(s).\n", lowerLetters[y], i++ );
+				
+			}
+		}
+	}
+}

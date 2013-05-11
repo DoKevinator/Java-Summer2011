@@ -1,0 +1,25 @@
+kevin do
+userID 1711886
+HOMEWORK 7.35C
+simpletronC
+
+Location		Number			Instruction
+00				1017			Read Counter
+01				1015			Read A
+02				2017			Load Counter
+03				3118			Subtract One
+04				2117			Store Counter
+05				4213			If counter = 0, skip to
+06				1016			Read B
+07				2016			Load B
+08				3115			Subtract A
+09				4102			If negative, loop back 02
+10				2016			Load B
+11				2115			Store A
+12				4002			loop back to 02
+13				1115			Write A
+14				4300			Halt
+15				0000			variable A
+16				0000			variable B
+17				0000			variable counter
+18				0001			variable one

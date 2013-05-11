@@ -1,0 +1,16 @@
+kevin do
+userID 1711886
+homework 7.35
+SimpleTronA
+
+Location			Number			Instruction
+00				+1008			Read A
+01				+2008			Load A
+02				+4106			If A is neg, skip to index 06
+03				+3009			Add Result
+04				+2109			Store Result
+05				+4000			Loop back to 00
+06				+1109			Write Result
+07				+4300			Halt
+08				+0000			Variable A
+09				+0000			Result
