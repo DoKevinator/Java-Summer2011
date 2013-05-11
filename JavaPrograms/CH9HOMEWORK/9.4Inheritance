@@ -1,5 +1,0 @@
-kevin do
-userID 1711886
-homework 9.4
-
-Inheritance promotes software reuse because many old programs can be reused in new programs. Many new programs might use similar methods to previous programs. This makes upgrading extremely convenient because the editor can inherit the old program and just modify the old methods with overriding and create a new way of solving a problem.
